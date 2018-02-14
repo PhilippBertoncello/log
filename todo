@@ -1,0 +1,1 @@
+log.cpp: log::getStringLength() always returns 7!
