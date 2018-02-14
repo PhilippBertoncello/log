@@ -1,3 +1,12 @@
+//=============================================
+//This is just a program that should help you
+//logging and debugging.
+//You can do whatever you want with this
+//program.
+//Original author: Philipp Bertoncello
+//Date: 2018-02-14
+//=============================================
+
 #include <time.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -166,7 +175,6 @@ namespace log {
 		timezone = timez;
 		maxinttostroutsize = maxinttostr;
 		logfile = file;
-		printf("%s", getdate());
 		appendToFile(logfile, getdate());
 		appendToFile(logfile, ":\n");
 	}
@@ -208,7 +216,7 @@ namespace log {
 		appendToFile(logfile, str);
 	}
 
-	void progress(const char* start, char* part, const char* end) {
+	void progress(const char* start, const char* part, const char* end) {
 		writeState((State)2);
 		printf("%s", start);
 		printf("%s", part);
