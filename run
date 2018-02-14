@@ -1,2 +1,0 @@
-g++ -o build/build.out src/main.cpp
- ./build/build.out
